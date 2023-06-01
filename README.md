@@ -2,7 +2,7 @@
 This package help you to run nextjs application in cordova
 
 <div style="display: flex; align-items: center">
-    <img style="margin-right: 24px" " src="https://cordova.apache.org/static/img/cordova_bot.png" width="100" title="cordova image"> 
+    <img style="margin-right: 24px;" src="https://cordova.apache.org/static/img/cordova_bot.png" width="100" title="cordova image"> 
     <img src="https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png" width="200" title="cordova image">
 </div>
 
