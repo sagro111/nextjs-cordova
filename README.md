@@ -69,8 +69,8 @@ config.xml
 
 # Troubleshooting
 
-```diff
 To successfully use our package, you need to use the `next export` command, this command adds some restrictions in the form of a ban on the use of `getServerSideProps` methods, you can read [referer NextJS docs](https://nextjs.org/docs/messages/gssp-export)
 
-After run ios or androd platforms may be errors like - Uncaught SyntaxError: Unexpected token ? - 
-```
+<span color="red" style="color:#ff0000; background-color: #ffeff0; padding: 5px; border-radius: 3px;">Uncaught SyntaxError: Unexpected token ?</span> - solution [@babel/plugin-transform-nullish-coalescing-operator](@babel/plugin-transform-nullish-coalescing-operator)
+
+
