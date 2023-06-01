@@ -1,6 +1,6 @@
 {
   "name": "nextjs-cordova",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Package for your nextjs static app as Cordova applicatiom",
   "main": "scripts/index.mjs",
   "type": "module",
@@ -24,7 +24,7 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sagro111/nextjs-cordovaissues"
+    "url": "https://github.com/sagro111/nextjs-cordova#issues"
   },
   "bin": {
     "nextjs-cordova-generator": "scripts/index.mjs"
