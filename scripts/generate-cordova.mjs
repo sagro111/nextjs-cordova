@@ -25,7 +25,7 @@ async function generateJsFile() {
     let jsDump = '';
 
     files.forEach((path) => {
-        jsDump += fs.readFileSync(path).toString().replace(sourceMapStringRegExp, '')
+        jsDump += `${fs.readFileSync(path).toString().replace(sourceMapStringRegExp, '')};\n`
     }, '');
     try {
         const cordovaJsFile = fs.readFileSync('./node_modules/nextjs-cordova/templates/index.js').toString().split('___NEXT_JS___')
