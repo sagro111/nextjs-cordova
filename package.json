@@ -1,0 +1,33 @@
+{
+  "name": "nextjs-cordova",
+  "version": "1.0.0",
+  "description": "Package for your nextjs static app as Cordova applicatiom",
+  "main": "scripts/index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagro111/nextjs-cordova-generator.git"
+  },
+  "keywords": [
+    "nextjs",
+    "cordova"
+  ],
+  "author": "Igor Latyshev",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "mkdirp": "^3.0.1",
+    "os": "^0.1.2",
+    "path": "^0.12.7"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagro111/nextjs-cordovaissues"
+  },
+  "bin": {
+    "nextjs-cordova-generator": "scripts/index.mjs"
+  },
+  "homepage": "https://github.com/sagro111/nextjs-cordova#readme"
+}
