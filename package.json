@@ -1,6 +1,6 @@
 {
   "name": "nextjs-cordova",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package for your nextjs static app as Cordova applicatiom",
   "main": "scripts/index.mjs",
   "type": "module",
