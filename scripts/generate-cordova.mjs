@@ -11,7 +11,7 @@ async function generateCordovaConfigFile() {
     }
     try {
 
-        const configFile = fs.readFileSync('bin/next-cordova-generator/templates/config.xml').toString();
+        const configFile = fs.readFileSync('./node_modules/nextjs-cordova/templates/config.xml').toString();
         await writeFile('config.xml', configFile);
         console.log('Have been added config.xml!');
     } catch (err) {
@@ -28,7 +28,7 @@ async function generateJsFile() {
         jsDump += fs.readFileSync(path).toString().replace(sourceMapStringRegExp, '')
     }, '');
     try {
-        const cordovaJsFile = fs.readFileSync('bin/next-cordova-generator/templates/index.js').toString().split('___NEXT_JS___')
+        const cordovaJsFile = fs.readFileSync('./node_modules/nextjs-cordova/templates/index.js').toString().split('___NEXT_JS___')
 
         await writeFile('www/js/index.js', [cordovaJsFile[0], jsDump,cordovaJsFile[1]].join('') );
         console.log('The main js file saved');
