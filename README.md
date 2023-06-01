@@ -70,4 +70,5 @@ config.xml
 # Troubleshooting
 
 To successfully use our package, you need to use the `next export` command, this command adds some restrictions in the form of a ban on the use of `getServerSideProps` methods, you can read [referer NextJS docs](https://nextjs.org/docs/messages/gssp-export)
-After run ios or androd platforms may be errors like <span style={color: 'red'; backround-color: rgba(red, 0.3);}>Uncaught SyntaxError: Unexpected token ?</span>
+
+After run ios or androd platforms may be errors like - Uncaught SyntaxError: Unexpected token ?
