@@ -1,28 +1,60 @@
 # nextjs-cordova
-This package help you to run nextjs application in cordova
+This package facilitates the seamless integration and execution of Next.js applications within a Cordova environment. It has been specifically designed to bridge the gap between Next.js, a popular React framework for building user interfaces, and Cordova, which allows developers to build native mobile apps using HTML, CSS, and JavaScript. With this package, you can leverage the power of both platforms, creating mobile applications with the rich, responsive user interfaces characteristic of Next.js
 
 <div style="display: flex; align-items: center">
     <img style="margin-right: 24px;" src="https://cordova.apache.org/static/img/cordova_bot.png" width="100" title="cordova image"> 
     <img src="https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png" width="200" title="cordova image">
 </div>
 
-# Requirements packages
+# Requirements
+Ensure you have the following packages installed:
 
 [NextJs](https://www.npmjs.com/package/next)  
 [Cordova](https://www.npmjs.com/package/cordova)
 
-# Steps required
-Install cordova: (`npm -g cordova` or `yarn global add cordova`)  
-Install this package (`npm install --save-dev nextjs-cordova` or `yarn add -D nextjs-cordova`)  
+# Installation Steps
 
-1. Before all you need to add `nextjs-cordova-generator` command to your package
+1. Install Cordova: 
+   
     ```
-    "scripts": {
-         "export": "next build && next export",
-         "build-cordova": "nextjs-cordova-generator"
-         ...
-     }
+    npm install -g cordova
     ```
+    ```
+    yarn global add cordova
+    ```
+
+2. Install this package:
+   
+    ```
+    npm install --save-dev nextjs-cordova
+    ```
+    ```
+    yarn add -D nextjs-cordova
+    ```
+   
+
+3. Add nextjs-cordova-generator command to your package.json file under scripts:
+
+   ```
+   "scripts": {
+        "export": "next build && next export",
+        "build-cordova": "nextjs-cordova-generator",
+        // other scripts...
+    }
+   ```
+
+# Usage
+
+1. Run the next export command in your project. This will create an out directory:
+
+    shell
+    npm run export
+    
+
+2. Run the build-cordova command. This will create a www directory and a config.xml file necessary for Cordova:
+
+    shell
+    npm run build-cordova
 2. Run in your project `next export`, this command will create `out` directory
 3. Run `npm run build-cordova`, this command will create `www` directory and `config.xml` file for cordova core
 
