@@ -47,14 +47,15 @@ Ensure you have the following packages installed:
 
 1. Run the next export command in your project. This will create an out directory:
 
-    shell
+    ```shell
     npm run export
-    
+    ```
 
 2. Run the build-cordova command. This will create a www directory and a config.xml file necessary for Cordova:
 
-    shell
+    ```shell
     npm run build-cordova
+    ```
 2. Run in your project `next export`, this command will create `out` directory
 3. Run `npm run build-cordova`, this command will create `www` directory and `config.xml` file for cordova core
 
